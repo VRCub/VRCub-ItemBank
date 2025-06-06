@@ -1,0 +1,79 @@
+prefix: '§7[§3物资§b银行§7] '
+
+auto-save: '自动保存 %d 名在线玩家数据完成 耗时: %.2fs'
+use-plugman-to-load-online-player-data: '已热加载 %d 名在线玩家的数据至缓存中'
+
+click-to-fast: '§c点那么快是取不出物品的，点击间隔是0.5秒'
+
+login-message:
+  - '§c§m§l     §6§m§l     §e§m§l     §a§m§l     §b§m§l       §e§l物资银行§b§m§l     §a§m§l     §e§m§l     §6§m§l     §c§m§l     '
+  - ''
+  - '§7成功领取今日物资银行 §c%.2f + %.2f §7积分利息'
+  - ''
+  - '§c§m§l     §6§m§l     §e§m§l      §a§m§l     §b§m§l      §e§m§l      §b§m§l      §a§m§l     §e§m§l     §6§m§l     §c§m§l     '
+
+database:
+  unknown-database-type: '无法正确加载名为 %s 的数据库'
+  database-selected-type: '当前选择的数据库为 %s'
+  initial-mysql: '正在尝试访问 MySQL 数据库...'
+  missing-sqlite-file: 'SQLite 数据库文件不存在，重建数据库连接'
+  successfully-loaded: '成功创建数据库连接'
+  exception-in-load-database: '加载数据库是出现错误：%s'
+  close-database-connection: '数据库连接已关闭：%s'
+
+bankitem:
+  load:
+    unknown-material: '未知物品：%s'
+    unknown-format: '未知格式：%s   请使用格式： 物品ID;价格;展示名'
+  withdraw:
+    not-have-enough-amount: '§c物资银行中没有足够的 %s 余量'
+    not-have-enough-score: '§c物资银行中没有足够的积分。你只有：%.2f，但取出需要：%.2f'
+    not-have-enough-slots: '§c背包空间不足，无法取出 %s'
+    drop-on-the-ground: '§c背包空间不足，物品掉落在地上！'
+    successfully-withdraw: '§a成功取出 %d 个 %s，剩余积分 %.2f'
+    input-start: '§b请在聊天框输入，需要取出 %s 的数量。§c输入cancel取消。'
+    input-cancel: '已取消取出操作！'
+    input-not-invalid: '§c输入无效，请重新输入一个有效的整数！'
+  deposit:
+    successfully-deposit: '§a放入存入物品成功！本次存储获得积分：%.2f'
+    deposit-not-invalid: '§c未放入有效物品！'
+
+shopitem:
+  load:
+    successfully-loaded: '成功加载 %d 个物资银行积分商店物品'
+  buy:
+    unknown-item: '未知商品，请联系管理员查看：%s'
+    not-have-enough-score: '§c物资银行中没有足够的积分去购买 %s。你只有：%.2f，但购买需要：%.2f'
+    not-have-enough-slots: '§c背包空间不足，无法购买 %s'
+    successfully-brought: '§a成功使用积分 %.2f 购买1份 %s，剩余积分 %.2f'
+
+
+
+command:
+  no-permission: '你没有权限执行此操作'
+  no-in-console: '控制台不支持此子命令'
+  migrate:
+    missing-data-file: '请把旧版物资银行需要迁移的data文件夹，放入本插件的文件夹下，再执行指令！'
+  shopedit:
+    missing-action: '请提供有效参数：add/delete'
+    add:
+      double-parse-failed: '积分价格需为Double类型，不能为：%s'
+      shop-item-exist: '物品 %s 已存在，无法重复添加'
+      command-args-missing: '请提供物品名称和价格参数，格式：/ib shopedit add <物品名称> <价格>'
+      successfully-added: '物品 %s 已成功添加到商店，价格为 %.2f'
+      failed-to-add: '物品 %s 保存失败，请查看后台报错：%s'
+    delete:
+      shop-item-not-exist: '物品 %s 不存在，无法删除'
+      command-args-missing: '请提供要删除的物品名称，格式：/ib shopedit delete <物品名称>'
+      successfully-deleted: '物品 %s 已成功从商店删除'
+      failed-to-delete: '物品 %s 删除失败，请查看后台报错：%s'
+  set:
+    command-args-missing: '帮助：/ib set <玩家> <积分>'
+    player-is-offline: '玩家 %s 不在线，无法设置！'
+    double-parse-failed: '积分需为Double类型，不能为：%s'
+    successfully-set: '玩家 %s 的物资银行积分已由 %.2f 设置为：%.2f'
+
+
+
+
+

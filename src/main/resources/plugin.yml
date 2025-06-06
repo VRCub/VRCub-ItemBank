@@ -1,0 +1,11 @@
+name: VRCub-ItemBank
+version: '${project.version}'
+main: net.vrcub.play.itembank.ItemBank
+api-version: '1.20'
+author: "SmallYun"
+folia-supported: true
+commands:
+  itembank:
+    description: '插件的主要指令'
+  #  permission: op
+    aliases: [ib]

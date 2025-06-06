@@ -1,0 +1,34 @@
+# 数据储存类型
+Database:
+  # 可选类型 SQLite / MySQL   可忽略大小写
+  type: 'SQLite'
+  # 自动保存间隔tick 6000=5分钟
+  auto-save: 6000
+  # 选择MySQL后必填
+  MySQL:
+    host: localhost
+    port: 3306
+    user: root
+    database: mysql
+    password: password
+    # 下面的选项，请勿更改！
+    # 如果你知道你在做什么
+    use-SSL: false
+    maximum-pool-size: 5
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+
+# 每日积分累计
+# 对应权限
+# itembank.rate.default
+# itembank.rate.vip
+# ...
+Rate:
+  default: 0.01
+  vip: 0.03
+  svip: 0.05
+  mvp: 0.08
+
+# 取出物品的积分手续费
+Fee: 0.05

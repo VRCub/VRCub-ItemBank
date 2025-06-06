@@ -1,0 +1,119 @@
+BankGUI:
+  title: '§0§l物资银行重制版 - 第 %page% 页'
+  bankItems:
+    name: "§a%name%"
+    lore:
+      - ''
+      - ' §a[左键] §e取出1组'
+      - ' §a[右键] §e取出5组'
+      - ' §a[Q键] §e自定义输入'
+      - ''
+      - '§e► §6存入积分: §b%price% §e当前拥有: §a%amount%'
+  items:
+    info:
+      mat: paper
+      cmd: 0
+      name: "§6您的积分 §e(信息)"
+      lore:
+        - ''
+        - ' §7当前积分: §a%score%'
+        - ''
+        - '§e► §6点击打开物资积分商店 '
+    store:
+      mat: chest
+      cmd: 0
+      name: "§6物资银行-重制版 §7By §eSmallYun"
+      lore:
+        - ''
+        - ' §a可用于存储物品,是一个大型仓库'
+        - ' §a支持存储的物品可跨服存取'
+        - ' §a取出物品有5%的积分手续费'
+        - ''
+        - '§e► §6点击选择物品进行存入'
+    rank:
+      mat: ladder
+      cmd: 0
+      name: "§6您的积分 §e(信息)"
+      lore:
+        - ''
+        - ' %rank%'
+        - ''
+        - '§e► §6排行榜十分钟更新一次'
+    next:
+      mat: arrow
+      cmd: 0
+      name: "§6下一页 §e(操作)"
+      lore:
+        - ''
+        - '  §7当前第§a %page% §7页'
+        - ''
+        - '§e► §6点击前往下一页'
+    prev:
+      mat: arrow
+      cmd: 0
+      name: "§6上一页 §e(操作)"
+      lore:
+        - ''
+        - '  §7当前第§a %page% §7页'
+        - ''
+        - '§e► §6点击前往上一页'
+    frame:
+      mat: GRAY_STAINED_GLASS_PANE
+      cmd: 0
+      name: ' '
+      lore: []
+
+StoreGUI:
+  title: '§0§l物资银行存入物品'
+  items:
+    save:
+      mat: chest
+      cmd: 0
+      name: '§6存入银行 §e(操作)'
+      lore:
+        - ''
+        - ' §a[左键] §e存入上方物品'
+        - ' §a[右键] §e返回物资银行'
+        - ' §a[Q键] §e存入背包物品'
+        - ''
+        - '§e► §6小技巧: 使用物品按住SHIFT点击多组物品,可批量放入！'
+    frame:
+      mat: GRAY_STAINED_GLASS_PANE
+      cmd: 0
+      name: ' '
+      lore: []
+ShopGUI:
+  title: '§0§l物资银行积分商店 - 第 %page% 页'
+  items:
+    shopitem:
+      lore: # 显示在物品下面的
+        - ''
+        - '§a§m                       '
+        - '§a购买价格：§6§l%price%'
+    back:
+      mat: barrier
+      cmd: 0
+      name: '§6返回银行 §e(操作)'
+    next:
+      mat: arrow
+      cmd: 0
+      name: "§6下一页 §e(操作)"
+      lore:
+        - ''
+        - '  §7当前第§a %page% §7页'
+        - ''
+        - '§e► §6点击前往下一页'
+    prev:
+      mat: arrow
+      cmd: 0
+      name: "§6上一页 §e(操作)"
+      lore:
+        - ''
+        - '  §7当前第§a %page% §7页'
+        - ''
+        - '§e► §6点击前往上一页'
+    frame:
+      mat: GRAY_STAINED_GLASS_PANE
+      cmd: 0
+      name: ' '
+      lore: [ ]

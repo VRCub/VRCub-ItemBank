@@ -1,0 +1,5 @@
+# 游戏内拿着需要配置积分兑换的物品
+# 使用增加指令 /ib shopedit add <物品名称> <价格>
+# 使用删除指令 /ib shopedit delete <物品名称>
+# 打开积分商店 /ib shop
+shopitem: { }
